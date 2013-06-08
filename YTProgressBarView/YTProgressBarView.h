@@ -1,0 +1,71 @@
+//
+//  YTProgressBarView.h
+//  YTProgressBarViewDemo
+//
+//  Created by Yiming Tang on 13-6-7.
+//  Copyright (c) 2013年 Yiming Tang. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+/**
+ Progress bar similar to the one in iOS's launching screen.
+ */
+@interface YTProgressBarView : UIView
+
+///---------------------------
+///@name Managing the Progress
+///---------------------------
+
+/**
+ The current progress shown by the receiver.
+ 
+ The current progress is represented by a floating-point value between `0.0` and `1.0`, inclusive, where `1.0` indicates
+ the completion of the task. Values less than `0.0` and greater than `1.0` are pinned to those limits.
+ 
+ The default value is `0.0`.
+ */
+@property (nonatomic, assign) CGFloat progress;
+
+///-------------------------------------
+/// @name Configuring the Appearance
+///-------------------------------------
+
+/**
+ The border width.
+ 
+ The default is `2.0`.
+ */
+@property (nonatomic, assign) CGFloat barBorderWidth;
+
+/**
+ The border color.
+ 
+ @see defaultBarColor
+ */
+@property (nonatomic, strong) UIColor *barBorderColor;
+
+/**
+ The fill color.
+ 
+ @see defaultBarColor
+ */
+@property (nonatomic, strong) UIColor *barFillColor;
+
+/**
+ The background color.
+ 
+ The default is clear.
+ */
+@property (nonatomic, strong) UIColor *barBackgroundColor;
+
+///---------------
+/// @name Defaults
+///---------------
+
+/**
+ The default value of `barBorderColor` and `barFillColor`.
+ */
++ (UIColor *)defaultBarColor;
+
+@end

@@ -12,10 +12,12 @@
 		208D3B0F1761F0350098F83B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0E1761F0350098F83B /* CoreGraphics.framework */; };
 		208D3B151761F0350098F83B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B131761F0350098F83B /* InfoPlist.strings */; };
 		208D3B171761F0350098F83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B161761F0350098F83B /* main.m */; };
-		208D3B1B1761F0350098F83B /* YTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B1A1761F0350098F83B /* YTAppDelegate.m */; };
+		208D3B1B1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */; };
 		208D3B1D1761F0350098F83B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B1C1761F0350098F83B /* Default.png */; };
 		208D3B1F1761F0350098F83B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B1E1761F0350098F83B /* Default@2x.png */; };
 		208D3B211761F0350098F83B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B201761F0350098F83B /* Default-568h@2x.png */; };
+		208D3B2A1761F1560098F83B /* YTProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B291761F1560098F83B /* YTProgressBarView.m */; };
+		208D3B2D1761F2FB0098F83B /* YTProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,15 @@
 		208D3B141761F0350098F83B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		208D3B161761F0350098F83B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		208D3B181761F0350098F83B /* YTProgressBarViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTProgressBarViewDemo-Prefix.pch"; sourceTree = "<group>"; };
-		208D3B191761F0350098F83B /* YTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTAppDelegate.h; sourceTree = "<group>"; };
-		208D3B1A1761F0350098F83B /* YTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAppDelegate.m; sourceTree = "<group>"; };
+		208D3B191761F0350098F83B /* YTProgressBarViewDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTProgressBarViewDemoAppDelegate.h; sourceTree = "<group>"; };
+		208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarViewDemoAppDelegate.m; sourceTree = "<group>"; };
 		208D3B1C1761F0350098F83B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		208D3B1E1761F0350098F83B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		208D3B201761F0350098F83B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		208D3B281761F1560098F83B /* YTProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTProgressBarView.h; sourceTree = "<group>"; };
+		208D3B291761F1560098F83B /* YTProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarView.m; sourceTree = "<group>"; };
+		208D3B2B1761F2FB0098F83B /* YTProgressBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTProgressBarViewController.h; sourceTree = "<group>"; };
+		208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		208D3AFE1761F0350098F83B = {
 			isa = PBXGroup;
 			children = (
+				208D3B271761F0A00098F83B /* YTProgressBarView */,
 				208D3B101761F0350098F83B /* YTProgressBarViewDemo */,
 				208D3B091761F0350098F83B /* Frameworks */,
 				208D3B081761F0350098F83B /* Products */,
@@ -78,8 +85,10 @@
 		208D3B101761F0350098F83B /* YTProgressBarViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				208D3B191761F0350098F83B /* YTAppDelegate.h */,
-				208D3B1A1761F0350098F83B /* YTAppDelegate.m */,
+				208D3B2B1761F2FB0098F83B /* YTProgressBarViewController.h */,
+				208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */,
+				208D3B191761F0350098F83B /* YTProgressBarViewDemoAppDelegate.h */,
+				208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */,
 				208D3B111761F0350098F83B /* Supporting Files */,
 			);
 			path = YTProgressBarViewDemo;
@@ -97,6 +106,15 @@
 				208D3B201761F0350098F83B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		208D3B271761F0A00098F83B /* YTProgressBarView */ = {
+			isa = PBXGroup;
+			children = (
+				208D3B281761F1560098F83B /* YTProgressBarView.h */,
+				208D3B291761F1560098F83B /* YTProgressBarView.m */,
+			);
+			path = YTProgressBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				208D3B171761F0350098F83B /* main.m in Sources */,
-				208D3B1B1761F0350098F83B /* YTAppDelegate.m in Sources */,
+				208D3B1B1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m in Sources */,
+				208D3B2A1761F1560098F83B /* YTProgressBarView.m in Sources */,
+				208D3B2D1761F2FB0098F83B /* YTProgressBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 				208D3B261761F0350098F83B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

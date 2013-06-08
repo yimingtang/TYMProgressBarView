@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YTAppDelegate.h"
+#import "YTProgressBarViewDemoAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YTAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YTProgressBarViewDemoAppDelegate class]));
     }
 }
