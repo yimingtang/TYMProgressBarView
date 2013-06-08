@@ -5,20 +5,20 @@ A progress bar which is similar to the one on iOS's launching screen.
 ## Example Usage
 
 ``` obj-c
-	// Create a progress bar view and set its appearance
-	YTProgressBarView *progressBarView = [[YTProgressBarView alloc] initWithFrame:aFrame];
-	progressBarView.barBorderWidth = 1.0f;
-	progressBarView.barBorderColor = yourColor;
+// Create a progress bar view and set its appearance
+YTProgressBarView *progressBarView = [[YTProgressBarView alloc] initWithFrame:aFrame];
+progressBarView.barBorderWidth = 1.0f;
+progressBarView.barBorderColor = yourColor;
 
-	// Add it to your view
+// Add it to your view
 
-	// Do some work
-    progressBarView.progress = 0.2f;
+// Do some work
+progressBarView.progress = 0.2f;
 
-    // Do some work
-    progressBarView.progress = 0.5f;
+// Do some work
+progressBarView.progress = 0.5f;
 
-    // Finally you may remove it from your view
+// Finally you may remove it from your view
 
 ```
 
