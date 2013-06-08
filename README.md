@@ -1,6 +1,6 @@
 # YTProgressBarView
 
-A progress bar which is similar to the one on iOS's launching screen or Twitter for iPhone.
+A progress bar which is similar to the one on iOS's launching screen.
 
 ## Example Usage
 
@@ -24,7 +24,7 @@ A progress bar which is similar to the one on iOS's launching screen or Twitter 
 
 ## Adding To Your Project
 
-Download the source files or add it as a git submodule.  Add `YTProgressBarView.h` and `YTProgressBarView.m` to your project.
+Download the source files or add it as a git submodule. Add `YTProgressBarView.h` and `YTProgressBarView.m` to your project.
 
 YTProgressBarView uses [Automatic Reference Counting (ARC)](http://clang.llvm.org/docs/AutomaticReferenceCounting.html). YTProgressBarView also requires the `Core Graphics` frameworks.
 
