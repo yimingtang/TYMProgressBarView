@@ -1,9 +1,9 @@
 //
-//  YTProgressBarView.h
-//  YTProgressBarViewDemo
+//  TYMProgressBarView.h
+//  TYMProgressBarView
 //
 //  Created by Yiming Tang on 13-6-7.
-//  Copyright (c) 2013年 Yiming Tang. All rights reserved.
+//  Copyright (c) 2013 - 2014 Yiming Tang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +11,7 @@
 /**
  Progress bar similar to the one in iOS's launching screen.
  */
-@interface YTProgressBarView : UIView
+@interface TYMProgressBarView : UIView
 
 ///---------------------------
 ///@name Managing the Progress

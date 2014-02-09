@@ -10,34 +10,34 @@
 		208D3B0B1761F0350098F83B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0A1761F0350098F83B /* UIKit.framework */; };
 		208D3B0D1761F0350098F83B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0C1761F0350098F83B /* Foundation.framework */; };
 		208D3B0F1761F0350098F83B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0E1761F0350098F83B /* CoreGraphics.framework */; };
-		208D3B151761F0350098F83B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B131761F0350098F83B /* InfoPlist.strings */; };
-		208D3B171761F0350098F83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B161761F0350098F83B /* main.m */; };
-		208D3B1B1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */; };
-		208D3B1D1761F0350098F83B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B1C1761F0350098F83B /* Default.png */; };
-		208D3B1F1761F0350098F83B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B1E1761F0350098F83B /* Default@2x.png */; };
-		208D3B211761F0350098F83B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208D3B201761F0350098F83B /* Default-568h@2x.png */; };
-		208D3B2A1761F1560098F83B /* YTProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B291761F1560098F83B /* YTProgressBarView.m */; };
-		208D3B2D1761F2FB0098F83B /* YTProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */; };
+		208D3B2A1761F1560098F83B /* TYMProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B291761F1560098F83B /* TYMProgressBarView.m */; };
+		20FC162418A809BD00DD54B7 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162118A809BD00DD54B7 /* DemoViewController.m */; };
+		20FC162518A809BD00DD54B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162318A809BD00DD54B7 /* AppDelegate.m */; };
+		20FC163018A809D600DD54B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162718A809D600DD54B7 /* main.m */; };
+		20FC163118A809D600DD54B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162A18A809D600DD54B7 /* Default-568h@2x.png */; };
+		20FC163218A809D600DD54B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162B18A809D600DD54B7 /* Default.png */; };
+		20FC163318A809D600DD54B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162C18A809D600DD54B7 /* Default@2x.png */; };
+		20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162D18A809D600DD54B7 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		208D3B071761F0350098F83B /* YTProgressBarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTProgressBarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		208D3B071761F0350098F83B /* TYMProgressBarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYMProgressBarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208D3B0A1761F0350098F83B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		208D3B0C1761F0350098F83B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208D3B0E1761F0350098F83B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		208D3B121761F0350098F83B /* YTProgressBarViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YTProgressBarViewDemo-Info.plist"; sourceTree = "<group>"; };
-		208D3B141761F0350098F83B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		208D3B161761F0350098F83B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		208D3B181761F0350098F83B /* YTProgressBarViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTProgressBarViewDemo-Prefix.pch"; sourceTree = "<group>"; };
-		208D3B191761F0350098F83B /* YTProgressBarViewDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTProgressBarViewDemoAppDelegate.h; sourceTree = "<group>"; };
-		208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarViewDemoAppDelegate.m; sourceTree = "<group>"; };
-		208D3B1C1761F0350098F83B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		208D3B1E1761F0350098F83B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		208D3B201761F0350098F83B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		208D3B281761F1560098F83B /* YTProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTProgressBarView.h; sourceTree = "<group>"; };
-		208D3B291761F1560098F83B /* YTProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarView.m; sourceTree = "<group>"; };
-		208D3B2B1761F2FB0098F83B /* YTProgressBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTProgressBarViewController.h; sourceTree = "<group>"; };
-		208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTProgressBarViewController.m; sourceTree = "<group>"; };
+		208D3B281761F1560098F83B /* TYMProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMProgressBarView.h; sourceTree = "<group>"; };
+		208D3B291761F1560098F83B /* TYMProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMProgressBarView.m; sourceTree = "<group>"; };
+		20FC162018A809BD00DD54B7 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		20FC162118A809BD00DD54B7 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		20FC162218A809BD00DD54B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20FC162318A809BD00DD54B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20FC162718A809D600DD54B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20FC162818A809D600DD54B7 /* TYMProgressBarView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYMProgressBarView-Prefix.pch"; sourceTree = "<group>"; };
+		20FC162A18A809D600DD54B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		20FC162B18A809D600DD54B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		20FC162C18A809D600DD54B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		20FC162E18A809D600DD54B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TYMProgressBarView-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 		208D3AFE1761F0350098F83B = {
 			isa = PBXGroup;
 			children = (
-				208D3B271761F0A00098F83B /* YTProgressBarView */,
-				208D3B101761F0350098F83B /* YTProgressBarViewDemo */,
+				208D3B271761F0A00098F83B /* TYMProgressBarView */,
+				208D3B101761F0350098F83B /* Example */,
 				208D3B091761F0350098F83B /* Frameworks */,
 				208D3B081761F0350098F83B /* Products */,
 			);
@@ -67,7 +67,7 @@
 		208D3B081761F0350098F83B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				208D3B071761F0350098F83B /* YTProgressBarViewDemo.app */,
+				208D3B071761F0350098F83B /* TYMProgressBarView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,47 +82,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		208D3B101761F0350098F83B /* YTProgressBarViewDemo */ = {
+		208D3B101761F0350098F83B /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				208D3B2B1761F2FB0098F83B /* YTProgressBarViewController.h */,
-				208D3B2C1761F2FB0098F83B /* YTProgressBarViewController.m */,
-				208D3B191761F0350098F83B /* YTProgressBarViewDemoAppDelegate.h */,
-				208D3B1A1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m */,
-				208D3B111761F0350098F83B /* Supporting Files */,
+				20FC161F18A809BD00DD54B7 /* Classes */,
+				20FC162918A809D600DD54B7 /* Resources */,
+				20FC162618A809D600DD54B7 /* Other Sources */,
 			);
-			path = YTProgressBarViewDemo;
+			path = Example;
 			sourceTree = "<group>";
 		};
-		208D3B111761F0350098F83B /* Supporting Files */ = {
+		208D3B271761F0A00098F83B /* TYMProgressBarView */ = {
 			isa = PBXGroup;
 			children = (
-				208D3B121761F0350098F83B /* YTProgressBarViewDemo-Info.plist */,
-				208D3B131761F0350098F83B /* InfoPlist.strings */,
-				208D3B161761F0350098F83B /* main.m */,
-				208D3B181761F0350098F83B /* YTProgressBarViewDemo-Prefix.pch */,
-				208D3B1C1761F0350098F83B /* Default.png */,
-				208D3B1E1761F0350098F83B /* Default@2x.png */,
-				208D3B201761F0350098F83B /* Default-568h@2x.png */,
+				208D3B281761F1560098F83B /* TYMProgressBarView.h */,
+				208D3B291761F1560098F83B /* TYMProgressBarView.m */,
 			);
-			name = "Supporting Files";
+			path = TYMProgressBarView;
 			sourceTree = "<group>";
 		};
-		208D3B271761F0A00098F83B /* YTProgressBarView */ = {
+		20FC161F18A809BD00DD54B7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				208D3B281761F1560098F83B /* YTProgressBarView.h */,
-				208D3B291761F1560098F83B /* YTProgressBarView.m */,
+				20FC162018A809BD00DD54B7 /* DemoViewController.h */,
+				20FC162118A809BD00DD54B7 /* DemoViewController.m */,
+				20FC162218A809BD00DD54B7 /* AppDelegate.h */,
+				20FC162318A809BD00DD54B7 /* AppDelegate.m */,
 			);
-			path = YTProgressBarView;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		20FC162618A809D600DD54B7 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				20FC162718A809D600DD54B7 /* main.m */,
+				20FC162818A809D600DD54B7 /* TYMProgressBarView-Prefix.pch */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		20FC162918A809D600DD54B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20FC162A18A809D600DD54B7 /* Default-568h@2x.png */,
+				20FC162B18A809D600DD54B7 /* Default.png */,
+				20FC162C18A809D600DD54B7 /* Default@2x.png */,
+				20FC162D18A809D600DD54B7 /* InfoPlist.strings */,
+				20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		208D3B061761F0350098F83B /* YTProgressBarViewDemo */ = {
+		208D3B061761F0350098F83B /* TYMProgressBarView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 208D3B241761F0350098F83B /* Build configuration list for PBXNativeTarget "YTProgressBarViewDemo" */;
+			buildConfigurationList = 208D3B241761F0350098F83B /* Build configuration list for PBXNativeTarget "TYMProgressBarView" */;
 			buildPhases = (
 				208D3B031761F0350098F83B /* Sources */,
 				208D3B041761F0350098F83B /* Frameworks */,
@@ -132,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = YTProgressBarViewDemo;
+			name = TYMProgressBarView;
 			productName = YTProgressBarViewDemo;
-			productReference = 208D3B071761F0350098F83B /* YTProgressBarViewDemo.app */;
+			productReference = 208D3B071761F0350098F83B /* TYMProgressBarView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +163,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yiming Tang";
 			};
-			buildConfigurationList = 208D3B021761F0350098F83B /* Build configuration list for PBXProject "YTProgressBarViewDemo" */;
+			buildConfigurationList = 208D3B021761F0350098F83B /* Build configuration list for PBXProject "TYMProgressBarView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -159,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				208D3B061761F0350098F83B /* YTProgressBarViewDemo */,
+				208D3B061761F0350098F83B /* TYMProgressBarView */,
 			);
 		};
 /* End PBXProject section */
@@ -169,10 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208D3B151761F0350098F83B /* InfoPlist.strings in Resources */,
-				208D3B1D1761F0350098F83B /* Default.png in Resources */,
-				208D3B1F1761F0350098F83B /* Default@2x.png in Resources */,
-				208D3B211761F0350098F83B /* Default-568h@2x.png in Resources */,
+				20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */,
+				20FC163218A809D600DD54B7 /* Default.png in Resources */,
+				20FC163118A809D600DD54B7 /* Default-568h@2x.png in Resources */,
+				20FC163318A809D600DD54B7 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,20 +199,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208D3B171761F0350098F83B /* main.m in Sources */,
-				208D3B1B1761F0350098F83B /* YTProgressBarViewDemoAppDelegate.m in Sources */,
-				208D3B2A1761F1560098F83B /* YTProgressBarView.m in Sources */,
-				208D3B2D1761F2FB0098F83B /* YTProgressBarViewController.m in Sources */,
+				20FC163018A809D600DD54B7 /* main.m in Sources */,
+				20FC162418A809BD00DD54B7 /* DemoViewController.m in Sources */,
+				20FC162518A809BD00DD54B7 /* AppDelegate.m in Sources */,
+				208D3B2A1761F1560098F83B /* TYMProgressBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		208D3B131761F0350098F83B /* InfoPlist.strings */ = {
+		20FC162D18A809D600DD54B7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				208D3B141761F0350098F83B /* en */,
+				20FC162E18A809D600DD54B7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -266,9 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YTProgressBarViewDemo/YTProgressBarViewDemo-Prefix.pch";
-				INFOPLIST_FILE = "YTProgressBarViewDemo/YTProgressBarViewDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
+				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
+				PRODUCT_NAME = TYMProgressBarView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -277,9 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YTProgressBarViewDemo/YTProgressBarViewDemo-Prefix.pch";
-				INFOPLIST_FILE = "YTProgressBarViewDemo/YTProgressBarViewDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
+				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
+				PRODUCT_NAME = TYMProgressBarView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -287,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		208D3B021761F0350098F83B /* Build configuration list for PBXProject "YTProgressBarViewDemo" */ = {
+		208D3B021761F0350098F83B /* Build configuration list for PBXProject "TYMProgressBarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208D3B221761F0350098F83B /* Debug */,
@@ -296,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		208D3B241761F0350098F83B /* Build configuration list for PBXNativeTarget "YTProgressBarViewDemo" */ = {
+		208D3B241761F0350098F83B /* Build configuration list for PBXNativeTarget "TYMProgressBarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208D3B251761F0350098F83B /* Debug */,

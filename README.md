@@ -1,6 +1,8 @@
 # YTProgressBarView
 
-A progress bar which is similar to the one on iOS's launching screen.
+A progress bar which is similar to the one on iOS's launching screen. All the drawing stuffs are implemented with Core Graphics in order to achieve high performance and feel comfortable for resizing.
+
+![Screenshot](https://raw2.github.com/krafttuc/TYMProgressBarView/master/Screenshot.png)
 
 ## Example Usage
 
@@ -22,11 +24,15 @@ progressBarView.progress = 0.5f;
 
 ```
 
+For more infomation, read the `YTProgressBarView.h` file.
+
 ## Adding To Your Project
 
 Download the source files or add it as a git submodule. Add `YTProgressBarView.h` and `YTProgressBarView.m` to your project.
 
-YTProgressBarView uses [Automatic Reference Counting (ARC)](http://clang.llvm.org/docs/AutomaticReferenceCounting.html). YTProgressBarView also requires the `Core Graphics` frameworks.
+YTProgressBarView uses [Automatic Reference Counting (ARC)](http://clang.llvm.org/docs/AutomaticReferenceCounting.html). It also requires the `Core Graphics` frameworks.
+
+YTProgressBarView is tested on both iOS 6 and iOS 7.
 
 ## Thanks
 
@@ -34,4 +40,4 @@ The code is based on [DDProgressView by Damien DeVille](https://github.com/ddevi
 
 ## LICENSE
 
-YTProgressBarView is available under the MIT license. See the LICENSE file for more info.
+YTProgressBarView is available under the MIT license. See the LICENSE file for details.

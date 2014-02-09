@@ -1,18 +1,18 @@
 //
-//  YTProgressBarView.m
-//  YTProgressBarViewDemo
+//  TYMProgressBarView.m
+//  TYMProgressBarView
 //
 //  Created by Yiming Tang on 13-6-7.
-//  Copyright (c) 2013年 Yiming Tang. All rights reserved.
+//  Copyright (c) 2013 - 2014 Yiming Tang. All rights reserved.
 //
 
-#import "YTProgressBarView.h"
+#import "TYMProgressBarView.h"
 
-@interface YTProgressBarView ()
+@interface TYMProgressBarView ()
 - (void)_initialize;
 @end
 
-@implementation YTProgressBarView
+@implementation TYMProgressBarView
 
 #pragma mark - Accessors
 
@@ -55,7 +55,7 @@
 
 + (UIColor *)defaultBarColor
 {
-    return [UIColor lightGrayColor];
+    return [UIColor darkGrayColor];
 }
 
 
@@ -154,6 +154,7 @@
 
 - (void)_initialize
 {
+    self.contentMode = UIViewContentModeRedraw;
     self.backgroundColor = [UIColor clearColor];
     
     self.progress = 0.0f;
