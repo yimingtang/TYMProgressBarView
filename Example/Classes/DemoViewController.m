@@ -39,12 +39,12 @@
     CGFloat offsetY = 40.0f;
     CGFloat width = (self.view.bounds.size.width - offsetX * 2);
     
-    TYMProgressBarView *progressBarView1 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 12.0f)];
+    TYMProgressBarView *progressBarView1 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 16.0f)];
     progressBarView1.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     progressBarView1.progress = 0.25;
     [self.view addSubview:progressBarView1];
     
-    offsetY += 26.0f;
+    offsetY += 30.0f;
     TYMProgressBarView *progressBarView2 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 16.0f)];
     progressBarView2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     progressBarView2.progress = 0.50;
@@ -83,7 +83,7 @@
     _progressBarView8 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 26.0f)];
     _progressBarView8.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     _progressBarView8.barBorderWidth = 0.0f;
-    _progressBarView8.barBackgroundColor = [UIColor darkGrayColor];
+    _progressBarView8.barInnerPadding = 0.0f;
     [self.view addSubview:_progressBarView8];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(incrementProgress:) userInfo:nil repeats:YES];

@@ -13,6 +13,7 @@
  */
 @interface TYMProgressBarView : UIView
 
+
 ///---------------------------
 ///@name Managing the Progress
 ///---------------------------
@@ -26,6 +27,7 @@
  The default value is `0.0`.
  */
 @property (nonatomic, assign) CGFloat progress;
+
 
 ///-------------------------------------
 /// @name Configuring the Appearance
@@ -46,18 +48,42 @@
 @property (nonatomic, strong) UIColor *barBorderColor;
 
 /**
+ The inner border width.
+ 
+ The default is `0.0`.
+ */
+@property (nonatomic, assign) CGFloat barInnerBorderWidth;
+
+/**
+ The inner border color.
+ 
+ The default is nil.
+ */
+@property (nonatomic, strong) UIColor *barInnerBorderColor;
+
+/**
+ The inner padding.
+ 
+ The default is `2.0`.
+ */
+@property (nonatomic, assign) CGFloat barInnerPadding;
+
+
+/**
  The fill color.
  
  @see defaultBarColor
  */
 @property (nonatomic, strong) UIColor *barFillColor;
 
+
 /**
- The background color.
+ The bar background color.
  
- The default is clear.
+ The default is white.
  */
 @property (nonatomic, strong) UIColor *barBackgroundColor;
+
 
 ///---------------
 /// @name Defaults
