@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TYMProgressBarView'
-  s.version      = '0.1.0'
+  s.version      = '0.2.0'
   s.summary      = 'A flattened progress bar.'
   s.homepage     = 'https://github.com/krafttuc/TYMProgressBarView'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
