@@ -38,35 +38,35 @@
  
  The default is `2.0`.
  */
-@property (nonatomic, assign) CGFloat barBorderWidth;
+@property (nonatomic, assign) CGFloat barBorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
  The border color.
  
  @see defaultBarColor
  */
-@property (nonatomic, strong) UIColor *barBorderColor;
+@property (nonatomic, strong) UIColor *barBorderColor UI_APPEARANCE_SELECTOR;
 
 /**
  The inner border width.
  
  The default is `0.0`.
  */
-@property (nonatomic, assign) CGFloat barInnerBorderWidth;
+@property (nonatomic, assign) CGFloat barInnerBorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
  The inner border color.
  
  The default is nil.
  */
-@property (nonatomic, strong) UIColor *barInnerBorderColor;
+@property (nonatomic, strong) UIColor *barInnerBorderColor UI_APPEARANCE_SELECTOR;
 
 /**
  The inner padding.
  
  The default is `2.0`.
  */
-@property (nonatomic, assign) CGFloat barInnerPadding;
+@property (nonatomic, assign) CGFloat barInnerPadding UI_APPEARANCE_SELECTOR;
 
 
 /**
@@ -74,7 +74,7 @@
  
  @see defaultBarColor
  */
-@property (nonatomic, strong) UIColor *barFillColor;
+@property (nonatomic, strong) UIColor *barFillColor UI_APPEARANCE_SELECTOR;
 
 
 /**
@@ -82,7 +82,7 @@
  
  The default is white.
  */
-@property (nonatomic, strong) UIColor *barBackgroundColor;
+@property (nonatomic, strong) UIColor *barBackgroundColor UI_APPEARANCE_SELECTOR;
 
 
 ///---------------

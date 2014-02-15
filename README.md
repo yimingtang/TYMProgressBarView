@@ -23,7 +23,7 @@ progressBarView.progress = 0.2f;
 progressBarView.progress = 0.5f;
 ```
 
-See [TYMProgressBarView.h](https://github.com/krafttuc/TYMProgressBarView/blob/master/TYMProgressBarView/TYMProgressBarView.h) for the full documentation.
+You can also customize the appearance through the UIAppearance proxy. See [TYMProgressBarView.h](https://github.com/krafttuc/TYMProgressBarView/blob/master/TYMProgressBarView/TYMProgressBarView.h) for full documentation.
 
 
 ## Adding To Your Project
