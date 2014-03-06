@@ -285,6 +285,7 @@
 				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
 				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
 				PRODUCT_NAME = TYMProgressBarView;
+				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -296,6 +297,7 @@
 				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
 				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
 				PRODUCT_NAME = TYMProgressBarView;
+				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

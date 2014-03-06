@@ -8,14 +8,25 @@
 
 #import "TYMProgressBarView.h"
 
-void strokeRoundedRectInContext(CGContextRef context, CGRect rect, CGFloat lineWidth, CGFloat radius);
-void fillRoundedRectInContext(CGContextRef context, CGRect rect, CGFloat radius);
-void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
+void strokeRectInContext(CGContextRef context, CGRect rect, CGFloat lineWidth, CGFloat radius);
+void fillRectInContext(CGContextRef context, CGRect rect, CGFloat radius);
+void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
 
 
 @implementation TYMProgressBarView
 
 #pragma mark - Accessors
+
+@synthesize progress = _progress;
+@synthesize barBorderWidth = _barBorderWidth;
+@synthesize barBorderColor = _barBorderColor;
+@synthesize barInnerBorderWidth = _barInnerBorderWidth;
+@synthesize barInnerBorderColor = _barInnerBorderColor;
+@synthesize barInnerPadding = _barInnerPadding;
+@synthesize barFillColor = _barFillColor;
+@synthesize barBackgroundColor = _barBackgroundColor;
+@synthesize usesRoundedCorners = _usesRoundedCorners;
+
 
 - (void)setProgress:(CGFloat)newProgress
 {
@@ -24,14 +35,15 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
 }
 
 
-- (void)setbarBorderWidth:(CGFloat)barBorderWidth
+- (void)setBarBorderWidth:(CGFloat)barBorderWidth
 {
     _barBorderWidth = barBorderWidth;
     [self setNeedsDisplay];
 }
 
 
-- (void)setbarBorderColor:(UIColor *)barBorderColor
+
+- (void)setBarBorderColor:(UIColor *)barBorderColor
 {
     _barBorderColor = barBorderColor;
     [self setNeedsDisplay];
@@ -52,9 +64,30 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
 }
 
 
-- (void)setbarFillColor:(UIColor *)barFillColor
+- (void)setBarInnerPadding:(CGFloat)barInnerPadding
+{
+    _barInnerPadding = barInnerPadding;
+    [self setNeedsDisplay];
+}
+
+
+- (void)setBarFillColor:(UIColor *)barFillColor
 {
     _barFillColor = barFillColor;
+    [self setNeedsDisplay];
+}
+
+
+- (void)setBarBackgroundColor:(UIColor *)barBackgroundColor
+{
+    _barBackgroundColor = barBackgroundColor;
+    [self setNeedsDisplay];
+}
+
+
+- (void)setUsesRoundedCorners:(NSInteger)usesRoundedCorners
+{
+    _usesRoundedCorners = usesRoundedCorners;
     [self setNeedsDisplay];
 }
 
@@ -64,6 +97,23 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
 + (UIColor *)defaultBarColor
 {
     return [UIColor darkGrayColor];
+}
+
+
++ (void)initialize
+{
+    if (self == [TYMProgressBarView class]) {
+        TYMProgressBarView *appearance = [TYMProgressBarView appearance];
+        [appearance setUsesRoundedCorners:YES];
+        [appearance setProgress:0.0f];
+        [appearance setBarBorderWidth:2.0f];
+        [appearance setBarBorderColor:[self defaultBarColor]];
+        [appearance setBarInnerBorderWidth:0.0f];
+        [appearance setBarInnerBorderColor:nil];
+        [appearance setBarInnerPadding:2.0f];
+        [appearance setBarFillColor:[self defaultBarColor]];
+        [appearance setBarBackgroundColor:[UIColor whiteColor]];
+    }
 }
 
 
@@ -94,15 +144,15 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
     CGContextSetAllowsAntialiasing(context, TRUE);
     
     CGRect currentRect = rect;
-    CGFloat radius;
-    CGFloat halfLineWidth;
+    CGFloat radius = 0;
+    CGFloat halfLineWidth = 0;
     
     // Background
     if (self.backgroundColor) {
-        radius = currentRect.size.height / 2;
+        if (self.usesRoundedCorners) radius = currentRect.size.height / 2;
         
         [self.barBackgroundColor setFill];
-        fillRoundedRectInContext(context, currentRect, radius);
+        fillRectInContext(context, currentRect, radius);
     }
     
     // Border
@@ -111,10 +161,10 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
         // See http://stackoverflow.com/questions/10557157/drawing-rounded-rect-in-core-graphics
         halfLineWidth = self.barBorderWidth / 2;
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
-        radius = currentRect.size.height / 2;
+        if (self.usesRoundedCorners) radius = currentRect.size.height / 2;
         
         [self.barBorderColor setStroke];
-        strokeRoundedRectInContext(context, currentRect, self.barBorderWidth, radius);
+        strokeRectInContext(context, currentRect, self.barBorderWidth, radius);
         
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
     }
@@ -122,37 +172,36 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
     // Padding
     currentRect = CGRectInset(currentRect, self.barInnerPadding, self.barInnerPadding);
     
-    
     BOOL hasInnerBorder = NO;
     // Inner border
     if (self.barInnerBorderColor && self.barInnerBorderWidth > 0.0f) {
         hasInnerBorder = YES;
         halfLineWidth = self.barInnerBorderWidth / 2;
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
-        radius = currentRect.size.height / 2;
+        if (self.usesRoundedCorners) radius = currentRect.size.height / 2;
         
         // progress
         currentRect.size.width *= self.progress;
-        currentRect.size.width = MAX(currentRect.size.width, 2 * radius);
+        currentRect.size.width = fmaxf(currentRect.size.width, 2 * radius);
         
         [self.barInnerBorderColor setStroke];
-        strokeRoundedRectInContext(context, currentRect, self.barInnerBorderWidth, radius);
+        strokeRectInContext(context, currentRect, self.barInnerBorderWidth, radius);
         
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
     }
     
     // Fill
     if (self.barFillColor) {
-        radius = currentRect.size.height / 2;
+        if (self.usesRoundedCorners) radius = currentRect.size.height / 2;
         
         // recalculate width
         if (!hasInnerBorder) {
             currentRect.size.width *= self.progress;
-            currentRect.size.width = MAX(currentRect.size.width, 2 * radius);
+            currentRect.size.width = fmaxf(currentRect.size.width, 2 * radius);
         }
         
         [self.barFillColor setFill];
-        fillRoundedRectInContext(context, currentRect, radius);
+        fillRectInContext(context, currentRect, radius);
     }
     
     // Restore the context
@@ -166,43 +215,38 @@ void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radi
 {
     self.contentMode = UIViewContentModeRedraw;
     self.backgroundColor = [UIColor clearColor];
-    
-    _progress = 0.0f;
-    _barBorderWidth = 2.0f;
-    _barBorderColor = [[self class] defaultBarColor];
-    _barFillColor = self.barBorderColor;
-    _barInnerBorderWidth = 0.0f;
-    _barInnerBorderColor = nil;
-    _barInnerPadding = 2.0f;
-    _barBackgroundColor = [UIColor whiteColor];
 }
 
 @end
 
 #pragma mark - Drawing Functions
 
-void strokeRoundedRectInContext(CGContextRef context, CGRect rect, CGFloat lineWidth, CGFloat radius)
+void strokeRectInContext(CGContextRef context, CGRect rect, CGFloat lineWidth, CGFloat radius)
 {
     CGContextSetLineWidth(context, lineWidth);
-    setRoundedRectPathInContext(context, rect, radius);
+    setRectPathInContext(context, rect, radius);
     CGContextStrokePath(context);
 }
 
 
-void fillRoundedRectInContext(CGContextRef context, CGRect rect, CGFloat radius)
+void fillRectInContext(CGContextRef context, CGRect rect, CGFloat radius)
 {
-    setRoundedRectPathInContext(context, rect, radius);
+    setRectPathInContext(context, rect, radius);
     CGContextFillPath(context);
 }
 
 
-void setRoundedRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius)
+void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius)
 {
     CGContextBeginPath(context);
-    CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMidY(rect));
-    CGContextAddArcToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect), CGRectGetMidX(rect), CGRectGetMinY(rect), radius);
-    CGContextAddArcToPoint(context, CGRectGetMaxX(rect), CGRectGetMinY(rect), CGRectGetMaxX(rect), CGRectGetMidY(rect), radius);
-    CGContextAddArcToPoint(context, CGRectGetMaxX(rect), CGRectGetMaxY(rect), CGRectGetMidX(rect), CGRectGetMaxY(rect), radius);
-    CGContextAddArcToPoint(context, CGRectGetMinX(rect), CGRectGetMaxY(rect), CGRectGetMinX(rect), CGRectGetMidY(rect), radius);
+    if (radius > 0.0f) {
+        CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMidY(rect));
+        CGContextAddArcToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect), CGRectGetMidX(rect), CGRectGetMinY(rect), radius);
+        CGContextAddArcToPoint(context, CGRectGetMaxX(rect), CGRectGetMinY(rect), CGRectGetMaxX(rect), CGRectGetMidY(rect), radius);
+        CGContextAddArcToPoint(context, CGRectGetMaxX(rect), CGRectGetMaxY(rect), CGRectGetMidX(rect), CGRectGetMaxY(rect), radius);
+        CGContextAddArcToPoint(context, CGRectGetMinX(rect), CGRectGetMaxY(rect), CGRectGetMinX(rect), CGRectGetMidY(rect), radius);
+    } else {
+        CGContextAddRect(context, rect);
+    }
     CGContextClosePath(context);
 }

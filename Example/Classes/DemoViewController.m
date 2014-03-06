@@ -17,13 +17,40 @@
 
 @implementation DemoViewController
 
+#pragma mark - Accessors
+
+@synthesize timer = _timer;
+@synthesize progressBarView7 = _progressBarView7;
+@synthesize progressBarView8 = _progressBarView8;
+
 - (void)setTimer:(NSTimer *)timer
 {
     if ([_timer isValid]) {
         [_timer invalidate];
     }
-    
     _timer = timer;
+}
+
+
+- (TYMProgressBarView *)progressBarView7
+{
+    if (!_progressBarView7) {
+        _progressBarView7 = [[TYMProgressBarView alloc] initWithFrame:CGRectZero];
+        _progressBarView7.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    }
+    return _progressBarView7;
+}
+
+
+- (TYMProgressBarView *)progressBarView8
+{
+    if (!_progressBarView8) {
+        _progressBarView8 = [[TYMProgressBarView alloc] initWithFrame:CGRectZero];
+        _progressBarView8.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        _progressBarView8.barBorderWidth = 0.0f;
+        _progressBarView8.barInnerPadding = 0.0f;
+    }
+    return _progressBarView8;
 }
 
 
@@ -75,18 +102,15 @@
     [self.view addSubview:progressBarView6];
     
     offsetY += 40.0f;
-    _progressBarView7 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 26.0f)];
-    _progressBarView7.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:_progressBarView7];
+    self.progressBarView7.frame = CGRectMake(offsetX, offsetY, width, 26.0f);
+    [self.view addSubview:self.progressBarView7];
     
     offsetY += 40.0f;
-    _progressBarView8 = [[TYMProgressBarView alloc] initWithFrame:CGRectMake(offsetX, offsetY, width, 26.0f)];
-    _progressBarView8.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    _progressBarView8.barBorderWidth = 0.0f;
-    _progressBarView8.barInnerPadding = 0.0f;
-    [self.view addSubview:_progressBarView8];
+    self.progressBarView8.frame = CGRectMake(offsetX, offsetY, width, 26.0f);
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(incrementProgress:) userInfo:nil repeats:YES];
+    [self.view addSubview:self.progressBarView8];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(incrementProgress:) userInfo:nil repeats:YES];
 }
 
 
@@ -94,14 +118,14 @@
 
 - (void)incrementProgress:(NSTimer *)timer
 {
-    _progressBarView7.progress = _progressBarView7.progress + 0.01;
-    if (_progressBarView7.progress == 1.0f) {
-        _progressBarView7.progress = 0.0;
+    self.progressBarView7.progress = self.progressBarView7.progress + 0.01;
+    if (self.progressBarView7.progress == 1.0f) {
+        self.progressBarView7.progress = 0.0;
     }
     
-    _progressBarView8.progress = _progressBarView8.progress + 0.01;
-    if (_progressBarView8.progress == 1.0f) {
-        _progressBarView8.progress = 0.0;
+    self.progressBarView8.progress = self.progressBarView8.progress + 0.01;
+    if (self.progressBarView8.progress == 1.0f) {
+        self.progressBarView8.progress = 0.0;
     }
 }
 

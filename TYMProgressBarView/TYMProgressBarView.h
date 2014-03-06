@@ -68,7 +68,6 @@
  */
 @property (nonatomic, assign) CGFloat barInnerPadding UI_APPEARANCE_SELECTOR;
 
-
 /**
  The fill color.
  
@@ -76,13 +75,21 @@
  */
 @property (nonatomic, strong) UIColor *barFillColor UI_APPEARANCE_SELECTOR;
 
-
 /**
  The bar background color.
  
  The default is white.
  */
 @property (nonatomic, strong) UIColor *barBackgroundColor UI_APPEARANCE_SELECTOR;
+
+/**
+ It determines whether use rounded corners.
+ 
+ The default is `YES`.
+ 
+ @discussion We can't set `BOOL` type through the `UIAppearance` API, so we use `NSInteger` instead.
+ */
+@property (nonatomic, assign) NSInteger usesRoundedCorners UI_APPEARANCE_SELECTOR;
 
 
 ///---------------
