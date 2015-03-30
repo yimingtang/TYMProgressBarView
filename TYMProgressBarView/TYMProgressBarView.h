@@ -2,8 +2,8 @@
 //  TYMProgressBarView.h
 //  TYMProgressBarView
 //
-//  Created by Yiming Tang on 13-6-7.
-//  Copyright (c) 2013 - 2014 Yiming Tang. All rights reserved.
+//  Created by Yiming Tang on 6/7/13.
+//  Copyright (c) 2013 - 2015 Yiming Tang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -26,7 +26,7 @@
  
  The default value is `0.0`.
  */
-@property (nonatomic, assign) CGFloat progress;
+@property (nonatomic) CGFloat progress;
 
 
 ///-------------------------------------
@@ -34,53 +34,53 @@
 ///-------------------------------------
 
 /**
- The border width.
+ The outer border width.
  
  The default is `2.0`.
  */
-@property (nonatomic, assign) CGFloat barBorderWidth UI_APPEARANCE_SELECTOR;
+@property (nonatomic) CGFloat barBorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
- The border color.
+ The outer border color.
  
  @see defaultBarColor
  */
-@property (nonatomic, strong) UIColor *barBorderColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UIColor *barBorderColor UI_APPEARANCE_SELECTOR;
 
 /**
  The inner border width.
  
  The default is `0.0`.
  */
-@property (nonatomic, assign) CGFloat barInnerBorderWidth UI_APPEARANCE_SELECTOR;
+@property (nonatomic) CGFloat barInnerBorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
  The inner border color.
  
  The default is nil.
  */
-@property (nonatomic, strong) UIColor *barInnerBorderColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UIColor *barInnerBorderColor UI_APPEARANCE_SELECTOR;
 
 /**
  The inner padding.
  
  The default is `2.0`.
  */
-@property (nonatomic, assign) CGFloat barInnerPadding UI_APPEARANCE_SELECTOR;
+@property (nonatomic) CGFloat barInnerPadding UI_APPEARANCE_SELECTOR;
 
 /**
  The fill color.
  
  @see defaultBarColor
  */
-@property (nonatomic, strong) UIColor *barFillColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UIColor *barFillColor UI_APPEARANCE_SELECTOR;
 
 /**
  The bar background color.
  
  The default is white.
  */
-@property (nonatomic, strong) UIColor *barBackgroundColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UIColor *barBackgroundColor UI_APPEARANCE_SELECTOR;
 
 /**
  It determines whether use rounded corners.
@@ -89,7 +89,7 @@
  
  @discussion We can't set `BOOL` type through the `UIAppearance` API, so we use `NSInteger` instead.
  */
-@property (nonatomic, assign) NSInteger usesRoundedCorners UI_APPEARANCE_SELECTOR;
+@property (nonatomic) NSInteger usesRoundedCorners UI_APPEARANCE_SELECTOR;
 
 
 ///---------------

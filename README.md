@@ -2,9 +2,11 @@
 
 A progress bar which is similar to the one on iOS's launching screen. All the drawing stuffs are implemented with Core Graphics in order to achieve high performance and feel comfortable for resizing.
 
-TYMProgressBarView is tested on both iOS 6 and iOS 7.
+TYMProgressBarView supports iOS 7.0 and later.
 
-![Screenshot](https://raw2.github.com/krafttuc/TYMProgressBarView/master/Screenshot.png)
+## Screenshot
+
+![screenshot](https://github.com/yimingtang/TYMProgressBarView/blob/master/Screenshot.png?raw=true)
 
 
 ## Usage
@@ -12,7 +14,7 @@ TYMProgressBarView is tested on both iOS 6 and iOS 7.
 ``` obj-c
 // Create a progress bar view and set its appearance
 TYMProgressBarView *progressBarView = [[TYMProgressBarView alloc] initWithFrame:aFrame];
-progressBarView.barBorderWidth = 1.0f;
+progressBarView.barBorderWidth = 1.0;
 progressBarView.barBorderColor = yourColor;
 
 // Add it to your view
@@ -23,7 +25,7 @@ progressBarView.progress = 0.2f;
 progressBarView.progress = 0.5f;
 ```
 
-You can also customize the appearance through the UIAppearance proxy. See [TYMProgressBarView.h](https://github.com/krafttuc/TYMProgressBarView/blob/master/TYMProgressBarView/TYMProgressBarView.h) for full documentation.
+You can also customize the appearance through the UIAppearance proxy. See [TYMProgressBarView.h](https://github.com/yimingtang/TYMProgressBarView/blob/master/TYMProgressBarView/TYMProgressBarView.h) for full documentation.
 
 
 ## Adding To Your Project
