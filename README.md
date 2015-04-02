@@ -11,7 +11,7 @@ TYMProgressBarView supports iOS 7.0 and later.
 
 ## Screenshot
 
-![screenshot](https://github.com/yimingtang/TYMProgressBarView/blob/master/Screenshot.png?raw=true)
+![screenshot](https://github.com/yimingtang/TYMProgressBarView/blob/master/Screenshot.gif?raw=true)
 
 
 ## Usage
