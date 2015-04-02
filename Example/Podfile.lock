@@ -1,0 +1,14 @@
+PODS:
+  - TYMProgressBarView (0.3.1)
+
+DEPENDENCIES:
+  - TYMProgressBarView (from `../`)
+
+EXTERNAL SOURCES:
+  TYMProgressBarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TYMProgressBarView: 594aff895cf32646283724877e924ad455443c20
+
+COCOAPODS: 0.36.1

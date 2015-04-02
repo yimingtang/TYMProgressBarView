@@ -7,37 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2028D8F41ACD398A00D0D923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2028D8F31ACD398A00D0D923 /* Images.xcassets */; };
 		208D3B0B1761F0350098F83B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0A1761F0350098F83B /* UIKit.framework */; };
 		208D3B0D1761F0350098F83B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0C1761F0350098F83B /* Foundation.framework */; };
 		208D3B0F1761F0350098F83B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208D3B0E1761F0350098F83B /* CoreGraphics.framework */; };
-		208D3B2A1761F1560098F83B /* TYMProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D3B291761F1560098F83B /* TYMProgressBarView.m */; };
-		20FC162418A809BD00DD54B7 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162118A809BD00DD54B7 /* DemoViewController.m */; };
-		20FC162518A809BD00DD54B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162318A809BD00DD54B7 /* AppDelegate.m */; };
+		20FC162418A809BD00DD54B7 /* TYMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162118A809BD00DD54B7 /* TYMViewController.m */; };
+		20FC162518A809BD00DD54B7 /* TYMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162318A809BD00DD54B7 /* TYMAppDelegate.m */; };
 		20FC163018A809D600DD54B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162718A809D600DD54B7 /* main.m */; };
-		20FC163118A809D600DD54B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162A18A809D600DD54B7 /* Default-568h@2x.png */; };
-		20FC163218A809D600DD54B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162B18A809D600DD54B7 /* Default.png */; };
-		20FC163318A809D600DD54B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162C18A809D600DD54B7 /* Default@2x.png */; };
 		20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162D18A809D600DD54B7 /* InfoPlist.strings */; };
+		68536CA47E33EBE1832E7109 /* libPods-TYMProgressBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2028D8F31ACD398A00D0D923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		208D3B071761F0350098F83B /* TYMProgressBarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYMProgressBarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208D3B0A1761F0350098F83B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		208D3B0C1761F0350098F83B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208D3B0E1761F0350098F83B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		208D3B281761F1560098F83B /* TYMProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMProgressBarView.h; sourceTree = "<group>"; };
-		208D3B291761F1560098F83B /* TYMProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMProgressBarView.m; sourceTree = "<group>"; };
-		20FC162018A809BD00DD54B7 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		20FC162118A809BD00DD54B7 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		20FC162218A809BD00DD54B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		20FC162318A809BD00DD54B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20FC162018A809BD00DD54B7 /* TYMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMViewController.h; sourceTree = "<group>"; };
+		20FC162118A809BD00DD54B7 /* TYMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMViewController.m; sourceTree = "<group>"; };
+		20FC162218A809BD00DD54B7 /* TYMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMAppDelegate.h; sourceTree = "<group>"; };
+		20FC162318A809BD00DD54B7 /* TYMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMAppDelegate.m; sourceTree = "<group>"; };
 		20FC162718A809D600DD54B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20FC162818A809D600DD54B7 /* TYMProgressBarView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYMProgressBarView-Prefix.pch"; sourceTree = "<group>"; };
-		20FC162A18A809D600DD54B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		20FC162B18A809D600DD54B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		20FC162C18A809D600DD54B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		20FC162E18A809D600DD54B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TYMProgressBarView-Info.plist"; sourceTree = "<group>"; };
+		36CE0D35962A989B9195B759 /* Pods-TYMProgressBarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.debug.xcconfig"; sourceTree = "<group>"; };
+		48020D58FA411256D3B91D2B /* Pods-TYMProgressBarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.release.xcconfig"; sourceTree = "<group>"; };
+		FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYMProgressBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +45,7 @@
 				208D3B0B1761F0350098F83B /* UIKit.framework in Frameworks */,
 				208D3B0D1761F0350098F83B /* Foundation.framework in Frameworks */,
 				208D3B0F1761F0350098F83B /* CoreGraphics.framework in Frameworks */,
+				68536CA47E33EBE1832E7109 /* libPods-TYMProgressBarView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,10 +55,10 @@
 		208D3AFE1761F0350098F83B = {
 			isa = PBXGroup;
 			children = (
-				208D3B271761F0A00098F83B /* TYMProgressBarView */,
-				208D3B101761F0350098F83B /* Example */,
+				208D3B101761F0350098F83B /* TYMProgressBarView */,
 				208D3B091761F0350098F83B /* Frameworks */,
 				208D3B081761F0350098F83B /* Products */,
+				875BE735A0DB4B6630A7E3CE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,36 +76,28 @@
 				208D3B0A1761F0350098F83B /* UIKit.framework */,
 				208D3B0C1761F0350098F83B /* Foundation.framework */,
 				208D3B0E1761F0350098F83B /* CoreGraphics.framework */,
+				FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		208D3B101761F0350098F83B /* Example */ = {
+		208D3B101761F0350098F83B /* TYMProgressBarView */ = {
 			isa = PBXGroup;
 			children = (
 				20FC161F18A809BD00DD54B7 /* Classes */,
 				20FC162918A809D600DD54B7 /* Resources */,
 				20FC162618A809D600DD54B7 /* Other Sources */,
 			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		208D3B271761F0A00098F83B /* TYMProgressBarView */ = {
-			isa = PBXGroup;
-			children = (
-				208D3B281761F1560098F83B /* TYMProgressBarView.h */,
-				208D3B291761F1560098F83B /* TYMProgressBarView.m */,
-			);
-			path = TYMProgressBarView;
+			name = TYMProgressBarView;
 			sourceTree = "<group>";
 		};
 		20FC161F18A809BD00DD54B7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				20FC162018A809BD00DD54B7 /* DemoViewController.h */,
-				20FC162118A809BD00DD54B7 /* DemoViewController.m */,
-				20FC162218A809BD00DD54B7 /* AppDelegate.h */,
-				20FC162318A809BD00DD54B7 /* AppDelegate.m */,
+				20FC162018A809BD00DD54B7 /* TYMViewController.h */,
+				20FC162118A809BD00DD54B7 /* TYMViewController.m */,
+				20FC162218A809BD00DD54B7 /* TYMAppDelegate.h */,
+				20FC162318A809BD00DD54B7 /* TYMAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -124,13 +114,20 @@
 		20FC162918A809D600DD54B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				20FC162A18A809D600DD54B7 /* Default-568h@2x.png */,
-				20FC162B18A809D600DD54B7 /* Default.png */,
-				20FC162C18A809D600DD54B7 /* Default@2x.png */,
+				2028D8F31ACD398A00D0D923 /* Images.xcassets */,
 				20FC162D18A809D600DD54B7 /* InfoPlist.strings */,
 				20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		875BE735A0DB4B6630A7E3CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36CE0D35962A989B9195B759 /* Pods-TYMProgressBarView.debug.xcconfig */,
+				48020D58FA411256D3B91D2B /* Pods-TYMProgressBarView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 208D3B241761F0350098F83B /* Build configuration list for PBXNativeTarget "TYMProgressBarView" */;
 			buildPhases = (
+				B957DF8EA62513812456C230 /* Check Pods Manifest.lock */,
 				208D3B031761F0350098F83B /* Sources */,
 				208D3B041761F0350098F83B /* Frameworks */,
 				208D3B051761F0350098F83B /* Resources */,
+				94C4185D2E9DC521339A6D92 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,7 +158,7 @@
 		208D3AFF1761F0350098F83B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = YT;
+				CLASSPREFIX = TYM;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yiming Tang";
 			};
@@ -186,13 +185,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */,
-				20FC163218A809D600DD54B7 /* Default.png in Resources */,
-				20FC163118A809D600DD54B7 /* Default-568h@2x.png in Resources */,
-				20FC163318A809D600DD54B7 /* Default@2x.png in Resources */,
+				2028D8F41ACD398A00D0D923 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94C4185D2E9DC521339A6D92 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B957DF8EA62513812456C230 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		208D3B031761F0350098F83B /* Sources */ = {
@@ -200,9 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20FC163018A809D600DD54B7 /* main.m in Sources */,
-				20FC162418A809BD00DD54B7 /* DemoViewController.m in Sources */,
-				20FC162518A809BD00DD54B7 /* AppDelegate.m in Sources */,
-				208D3B2A1761F1560098F83B /* TYMProgressBarView.m in Sources */,
+				20FC162418A809BD00DD54B7 /* TYMViewController.m in Sources */,
+				20FC162518A809BD00DD54B7 /* TYMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +309,13 @@
 		};
 		208D3B251761F0350098F83B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CE0D35962A989B9195B759 /* Pods-TYMProgressBarView.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
-				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/TYMProgressBarView-Prefix.pch";
+				INFOPLIST_FILE = "Resources/TYMProgressBarView-Info.plist";
 				PRODUCT_NAME = TYMProgressBarView;
 				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
@@ -292,10 +324,13 @@
 		};
 		208D3B261761F0350098F83B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48020D58FA411256D3B91D2B /* Pods-TYMProgressBarView.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/Other Sources/TYMProgressBarView-Prefix.pch";
-				INFOPLIST_FILE = "Example/Resources/TYMProgressBarView-Info.plist";
+				GCC_PREFIX_HEADER = "Other Sources/TYMProgressBarView-Prefix.pch";
+				INFOPLIST_FILE = "Resources/TYMProgressBarView-Info.plist";
 				PRODUCT_NAME = TYMProgressBarView;
 				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;

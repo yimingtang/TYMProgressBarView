@@ -6,11 +6,10 @@
 //  Copyright (c) 2013 - 2014 Yiming Tang. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TYMAppDelegate.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([TYMAppDelegate class]));
     }
 }

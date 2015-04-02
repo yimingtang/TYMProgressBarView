@@ -1,5 +1,10 @@
 # TYMProgressBarView
 
+[![CI Status](http://img.shields.io/travis/yimingtang/TYMProgressBarView.svg?style=flat)](https://travis-ci.org/yimingtang/TYMProgressBarView)
+[![Version](https://img.shields.io/cocoapods/v/TYMProgressBarView.svg?style=flat)](http://cocoapods.org/pods/TYMProgressBarView)
+[![License](https://img.shields.io/cocoapods/l/TYMProgressBarView.svg?style=flat)](http://cocoapods.org/pods/TYMProgressBarView)
+[![Platform](https://img.shields.io/cocoapods/p/TYMProgressBarView.svg?style=flat)](http://cocoapods.org/pods/TYMProgressBarView)
+
 A progress bar which is similar to the one on iOS's launching screen. All the drawing stuffs are implemented with Core Graphics in order to achieve high performance and feel comfortable for resizing.
 
 TYMProgressBarView supports iOS 7.0 and later.
@@ -28,7 +33,7 @@ progressBarView.progress = 0.5f;
 You can also customize the appearance through the UIAppearance proxy. See [TYMProgressBarView.h](https://github.com/yimingtang/TYMProgressBarView/blob/master/TYMProgressBarView/TYMProgressBarView.h) for full documentation.
 
 
-## Adding To Your Project
+## Installation
 
 ### Manually
 
@@ -38,13 +43,12 @@ TYMProgressBarView uses [Automatic Reference Counting (ARC)](http://clang.llvm.o
 
 ### CocoaPods
 
-If you are using [CocoaPods](http://cocoapods.org), then just add the next line to your `Podfile`:
+TYMProgressBarView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
 ``` ruby
 pod 'TYMProgressBarView'
 ```
-
-Now run `pod install` to install the dependency.
 
 
 ## Thanks
