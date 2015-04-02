@@ -15,7 +15,7 @@
 		20FC162518A809BD00DD54B7 /* TYMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162318A809BD00DD54B7 /* TYMAppDelegate.m */; };
 		20FC163018A809D600DD54B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162718A809D600DD54B7 /* main.m */; };
 		20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162D18A809D600DD54B7 /* InfoPlist.strings */; };
-		68536CA47E33EBE1832E7109 /* libPods-TYMProgressBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */; };
+		7FA29E23D2EB8EED4B4F6DB3 /* libPods-TYMProgressBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE3A3067A06019F8E922BF /* libPods-TYMProgressBarView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TYMProgressBarView-Info.plist"; sourceTree = "<group>"; };
 		36CE0D35962A989B9195B759 /* Pods-TYMProgressBarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.debug.xcconfig"; sourceTree = "<group>"; };
 		48020D58FA411256D3B91D2B /* Pods-TYMProgressBarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.release.xcconfig"; sourceTree = "<group>"; };
-		FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYMProgressBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EE3A3067A06019F8E922BF /* libPods-TYMProgressBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYMProgressBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 				208D3B0B1761F0350098F83B /* UIKit.framework in Frameworks */,
 				208D3B0D1761F0350098F83B /* Foundation.framework in Frameworks */,
 				208D3B0F1761F0350098F83B /* CoreGraphics.framework in Frameworks */,
-				68536CA47E33EBE1832E7109 /* libPods-TYMProgressBarView.a in Frameworks */,
+				7FA29E23D2EB8EED4B4F6DB3 /* libPods-TYMProgressBarView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 				208D3B0A1761F0350098F83B /* UIKit.framework */,
 				208D3B0C1761F0350098F83B /* Foundation.framework */,
 				208D3B0E1761F0350098F83B /* CoreGraphics.framework */,
-				FDD460140AF8EC4738AC4973 /* libPods-TYMProgressBarView.a */,
+				75EE3A3067A06019F8E922BF /* libPods-TYMProgressBarView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
