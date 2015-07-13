@@ -83,6 +83,26 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
 }
 
 
+-(void)setBackgroudRoundedCornerRadius:(NSInteger)backgroudRoundedCornerRadius {
+    _backgroudRoundedCornerRadius = backgroudRoundedCornerRadius;
+    [self setNeedsDisplay];
+}
+
+-(void)setBorderRoundedCornerRadius:(NSInteger)borderRoundedCornerRadius {
+    _borderRoundedCornerRadius = borderRoundedCornerRadius;
+    [self setNeedsDisplay];
+}
+
+-(void)setInnerBorderRoundedCornerRadius:(NSInteger)innerBorderRoundedCornerRadius {
+    _innerBorderRoundedCornerRadius = innerBorderRoundedCornerRadius;
+    [self setNeedsDisplay];
+}
+
+-(void)setFillRoundedCornerRadius:(NSInteger)fillRoundedCornerRadius {
+    _fillRoundedCornerRadius = fillRoundedCornerRadius;
+    [self setNeedsDisplay];
+}
+
 #pragma mark - Class Methods
 
 + (UIColor *)defaultBarColor {
@@ -102,6 +122,10 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
         [appearance setBarInnerPadding:2.0];
         [appearance setBarFillColor:[self defaultBarColor]];
         [appearance setBarBackgroundColor:[UIColor whiteColor]];
+        [appearance setBackgroudRoundedCornerRadius:0];
+        [appearance setBorderRoundedCornerRadius:0];
+        [appearance setInnerBorderRoundedCornerRadius:0];
+        [appearance setFillRoundedCornerRadius:0];
     }
 }
 
@@ -135,7 +159,7 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
     
     // Background
     if (self.backgroundColor) {
-        if (self.usesRoundedCorners) radius = currentRect.size.height / 2.0;
+        if (self.usesRoundedCorners) radius = self.backgroudRoundedCornerRadius ? self.backgroudRoundedCornerRadius : currentRect.size.height / 2.0;
         
         [self.barBackgroundColor setFill];
         fillRectInContext(context, currentRect, radius);
@@ -147,7 +171,7 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
         // See http://stackoverflow.com/questions/10557157/drawing-rounded-rect-in-core-graphics
         halfLineWidth = self.barBorderWidth / 2.0;
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
-        if (self.usesRoundedCorners) radius = currentRect.size.height / 2.0;
+        if (self.usesRoundedCorners) radius = self.borderRoundedCornerRadius ? self.borderRoundedCornerRadius : currentRect.size.height / 2.0;
         
         [self.barBorderColor setStroke];
         strokeRectInContext(context, currentRect, self.barBorderWidth, radius);
@@ -164,7 +188,7 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
         hasInnerBorder = YES;
         halfLineWidth = self.barInnerBorderWidth / 2.0;
         currentRect = CGRectInset(currentRect, halfLineWidth, halfLineWidth);
-        if (self.usesRoundedCorners) radius = currentRect.size.height / 2.0;
+        if (self.usesRoundedCorners) radius = self.innerBorderRoundedCornerRadius ? self.innerBorderRoundedCornerRadius : currentRect.size.height / 2.0;
         
         // progress
         currentRect.size.width *= self.progress;
@@ -178,7 +202,7 @@ void setRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius);
     
     // Fill
     if (self.barFillColor) {
-        if (self.usesRoundedCorners) radius = currentRect.size.height / 2;
+        if (self.usesRoundedCorners) radius = self.fillRoundedCornerRadius ? self.fillRoundedCornerRadius : currentRect.size.height / 2;
         
         // recalculate width
         if (!hasInnerBorder) {
