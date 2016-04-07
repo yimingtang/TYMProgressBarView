@@ -3,7 +3,7 @@
 //  TYMProgressBarView
 //
 //  Created by Yiming Tang on 6/7/13.
-//  Copyright (c) 2013 - 2015 Yiming Tang. All rights reserved.
+//  Copyright (c) 2013 - 2016 Yiming Tang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

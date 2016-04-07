@@ -16,6 +16,7 @@
 		20FC163018A809D600DD54B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC162718A809D600DD54B7 /* main.m */; };
 		20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20FC162D18A809D600DD54B7 /* InfoPlist.strings */; };
 		7FA29E23D2EB8EED4B4F6DB3 /* libPods-TYMProgressBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE3A3067A06019F8E922BF /* libPods-TYMProgressBarView.a */; };
+		F111A8571CB642A8002FE5E6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F111A8561CB642A8002FE5E6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		36CE0D35962A989B9195B759 /* Pods-TYMProgressBarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.debug.xcconfig"; sourceTree = "<group>"; };
 		48020D58FA411256D3B91D2B /* Pods-TYMProgressBarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYMProgressBarView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView.release.xcconfig"; sourceTree = "<group>"; };
 		75EE3A3067A06019F8E922BF /* libPods-TYMProgressBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYMProgressBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F111A8561CB642A8002FE5E6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				2028D8F31ACD398A00D0D923 /* Images.xcassets */,
 				20FC162D18A809D600DD54B7 /* InfoPlist.strings */,
 				20FC162F18A809D600DD54B7 /* TYMProgressBarView-Info.plist */,
+				F111A8561CB642A8002FE5E6 /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				208D3B041761F0350098F83B /* Frameworks */,
 				208D3B051761F0350098F83B /* Resources */,
 				94C4185D2E9DC521339A6D92 /* Copy Pods Resources */,
+				B8A3CEEC38302F82E01EFAD0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TYM;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Yiming Tang";
 			};
 			buildConfigurationList = 208D3B021761F0350098F83B /* Build configuration list for PBXProject "TYMProgressBarView" */;
@@ -184,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F111A8571CB642A8002FE5E6 /* Launch Screen.storyboard in Resources */,
 				20FC163418A809D600DD54B7 /* InfoPlist.strings in Resources */,
 				2028D8F41ACD398A00D0D923 /* Images.xcassets in Resources */,
 			);
@@ -205,6 +210,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A3CEEC38302F82E01EFAD0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYMProgressBarView/Pods-TYMProgressBarView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B957DF8EA62513812456C230 /* Check Pods Manifest.lock */ = {
@@ -263,6 +283,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -316,6 +337,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/TYMProgressBarView-Prefix.pch";
 				INFOPLIST_FILE = "Resources/TYMProgressBarView-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.xianqu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TYMProgressBarView;
 				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
@@ -331,6 +353,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/TYMProgressBarView-Prefix.pch";
 				INFOPLIST_FILE = "Resources/TYMProgressBarView-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.xianqu.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TYMProgressBarView;
 				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
