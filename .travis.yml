@@ -5,5 +5,5 @@ podfile: Example/Podfile
 before_install:
 - gem install xcpretty cocoapods --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail && xcodebuild clean -workspace Example/TYMProgressBarView.xcworkspace -scheme TYMProgressBarView-Example -sdk iphonesimulator -destination "platform=iOS Simulator,OS=9.3,name=iPhone 6s" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild -workspace Example/TYMProgressBarView.xcworkspace -scheme TYMProgressBarView-Example -sdk iphonesimulator -destination "platform=iOS Simulator,OS=9.3,name=iPhone 6s" ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
