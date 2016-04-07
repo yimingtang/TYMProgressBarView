@@ -92,6 +92,36 @@
 @property (nonatomic) NSInteger usesRoundedCorners UI_APPEARANCE_SELECTOR;
 
 
+/**
+ Specifies radius used to round corners for background.
+ 
+ The default is `0`, meaning that radius should be calculated as a half of the component height.
+ */
+@property (nonatomic) NSInteger backgroudRoundedCornerRadius UI_APPEARANCE_SELECTOR;
+
+/**
+ Specifies radius used to round corners for background.
+ 
+ The default is `0`, meaning that radius should be calculated as a half of the component height.
+ */
+@property (nonatomic) NSInteger borderRoundedCornerRadius UI_APPEARANCE_SELECTOR;
+
+/**
+ Specifies radius used to round corners for background.
+ 
+ The default is `0`, meaning that radius should be calculated as a half of the component height.
+ */
+@property (nonatomic) NSInteger innerBorderRoundedCornerRadius UI_APPEARANCE_SELECTOR;
+
+/**
+ Specifies radius used to round corners for background.
+ 
+ The default is `0`, meaning that radius should be calculated as a half of the component height.
+ */
+@property (nonatomic) NSInteger fillRoundedCornerRadius UI_APPEARANCE_SELECTOR;
+
+
+
 ///---------------
 /// @name Defaults
 ///---------------
